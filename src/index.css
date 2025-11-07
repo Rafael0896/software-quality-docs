@@ -54,7 +54,7 @@ section h2 {
 }
 
 /* ============================================
-   APP.CSS - Estilos Header
+   Estilos Header
    ============================================ */
 .header {
     background: linear-gradient(135deg, #85cc63 0%, #1b4c04 100%);
@@ -114,4 +114,64 @@ section h2 {
     background: white;
     color: #4ebd17;
     transform: translateY(-2px);
+}
+
+/* ============================================
+   Estilos Hero Section
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, #fafaf8 0%, #1a1c19 100%);
+    padding: 10rem 1rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #faf8f8;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #f6faf9;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    background: #4ebd17;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(78, 189, 23, 0.3);
+}
+
+.hero-button:hover {
+    background: #3a9012;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(78, 189, 23, 0.4);
 }
