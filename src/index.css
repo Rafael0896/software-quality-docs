@@ -175,3 +175,86 @@ section h2 {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(78, 189, 23, 0.4);
 }
+
+/* ============================================
+   Estilos Fundamentos.
+   ============================================ */
+
+.fundamentos-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(78, 189, 23, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #4ebd17;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.frameworks {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4ebd17 0%, #3a9012 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.frameworks h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.framework-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: white;
+    color: #4ebd17;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+}
