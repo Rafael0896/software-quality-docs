@@ -304,3 +304,108 @@ section h2 {
     font-weight: 600;
     font-size: 0.9rem;
 }
+
+/* ============================================
+   Estilos Instrumentos
+   ============================================ */
+
+.instruments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.instrument-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.instrument-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(78, 189, 23, 0.15);
+}
+
+.instrument-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.instrument-number {
+    background: #4ebd17;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.instrument-card h3 {
+    color: #333333;
+    font-size: 1.3rem;
+}
+
+.instrument-desc {
+    color: #666666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.instrument-items {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.instrument-items strong {
+    color: #4ebd17;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.instrument-items ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.instrument-items li {
+    padding: 0.5rem 0;
+    color: #666666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.instrument-items li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4ebd17;
+    font-weight: 700;
+}
+
+.download-btn {
+    width: 100%;
+    background: #4ebd17;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #3a9012;
+    transform: translateY(-2px);
+}
