@@ -258,3 +258,49 @@ section h2 {
     font-weight: 600;
     font-size: 1rem;
 }
+
+/* ============================================
+   Estilos Buenas Prácticas
+   ============================================ */
+/* Buenas Prácticas Table */
+.table-container {
+    overflow-x: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.practices-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+.practices-table thead {
+    background: linear-gradient(135deg, #4ebd17 0%, #3a9012 100%);
+    color: white;
+}
+
+.practices-table th {
+    padding: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.practices-table td {
+    padding: 1.2rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.practices-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.marco-badge {
+    background: #e8f5e0;
+    color: #4ebd17;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}

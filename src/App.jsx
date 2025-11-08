@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import HeroSection from "./components/HeroSection.jsx";
 import Fundamentos from "./components/Fundamentos.jsx";
+import BuenasPracticas from "./components/BuenasPracticas.jsx"
 
 // Componente principal de la aplicación
 export default function App() {
@@ -14,6 +15,9 @@ export default function App() {
                 </section>
                 <section id="practices">
                     <Fundamentos/>
+                </section>
+                <section id="practices">
+                    <BuenasPracticas/>
                 </section>
             </main>
         </div>
