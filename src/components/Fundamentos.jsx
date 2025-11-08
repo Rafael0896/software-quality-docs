@@ -14,32 +14,26 @@ const Fundamentos = () => {
 
                     <div className="cards-grid">
                         <div className="card">
-                            <div className="card-icon">🎯</div>
                             <h3>Funcionalidad</h3>
                             <p>Capacidad del software para proporcionar funciones que satisfagan las necesidades del usuario</p>
                         </div>
                         <div className="card">
-                            <div className="card-icon">🛡️</div>
                             <h3>Fiabilidad</h3>
                             <p>Capacidad de mantener un nivel de rendimiento específico bajo condiciones establecidas</p>
                         </div>
                         <div className="card">
-                            <div className="card-icon">👤</div>
                             <h3>Usabilidad</h3>
                             <p>Facilidad de uso y aprendizaje del software por parte de los usuarios finales</p>
                         </div>
                         <div className="card">
-                            <div className="card-icon">⚡</div>
                             <h3>Eficiencia</h3>
                             <p>Uso óptimo de recursos en relación con el nivel de rendimiento proporcionado</p>
                         </div>
                         <div className="card">
-                            <div className="card-icon">🔧</div>
                             <h3>Mantenibilidad</h3>
                             <p>Facilidad con la que el software puede ser modificado para corregir o mejorar</p>
                         </div>
                         <div className="card">
-                            <div className="card-icon">🌐</div>
                             <h3>Portabilidad</h3>
                             <p>Capacidad del software para ser transferido de un ambiente a otro</p>
                         </div>

@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <section id="inicio" className="hero">
             <div className="hero-content">
-                <div className="hero-icon">💻</div>
+                <div className="hero-icon"></div>
                 <h2 className="hero-title">
                     La calidad del software se logra cuando los procesos se documentan, evalúan y mejoran continuamente
                 </h2>

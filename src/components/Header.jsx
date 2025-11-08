@@ -18,8 +18,6 @@ const Header = () => {
                     <button onClick={() => scrollToSection('fundamentos')}>Fundamentos</button>
                     <button onClick={() => scrollToSection('buenas-practicas')}>Buenas prácticas</button>
                     <button onClick={() => scrollToSection('instrumentos')}>Instrumentos</button>
-                    <button onClick={() => scrollToSection('infografia')}>Infografía</button>
-                    <button onClick={() => scrollToSection('conclusiones')}>Conclusiones</button>
                 </nav>
             </div>
         </header>
