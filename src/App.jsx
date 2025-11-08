@@ -4,6 +4,8 @@ import HeroSection from "./components/HeroSection.jsx";
 import Fundamentos from "./components/Fundamentos.jsx";
 import BuenasPracticas from "./components/BuenasPracticas.jsx"
 import Instrumentos from "./components/Instrumentos.jsx";
+import Footer from "./components/Footer.jsx";
+
 
 // Componente principal de la aplicación
 export default function App() {
@@ -24,6 +26,7 @@ export default function App() {
                     <Instrumentos/>
                 </section>
             </main>
+            <Footer/>
         </div>
     );
 }
