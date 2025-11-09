@@ -471,3 +471,436 @@ section h2 {
         flex-direction: column;
     }
 }
+
+/* ========================================
+   ESTILOS PARA MODAL Y DOCUMENTOS
+   ======================================== */
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 15px;
+    max-width: 1400px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-close {
+    position: sticky;
+    top: 10px;
+    right: 10px;
+    float: right;
+    background: #ff4444;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.modal-close:hover {
+    background: #cc0000;
+    transform: rotate(90deg);
+}
+
+/* Documento Styles */
+.documento {
+    padding: 3rem;
+    font-size: 0.95rem;
+}
+
+.doc-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #4ebd17;
+}
+
+.doc-header h2 {
+    color: #4ebd17;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.doc-subtitle {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.doc-info {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-row span {
+    flex: 1;
+    color: #333333;
+}
+
+/* Document Table Styles */
+.doc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.doc-table thead {
+    background: linear-gradient(135deg, #4ebd17 0%, #3a9012 100%);
+    color: white;
+}
+
+.doc-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #ddd;
+}
+
+.doc-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.doc-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.doc-table tbody tr:hover {
+    background: #f0f8ec;
+}
+
+.category-row {
+    background: #e8f5e0 !important;
+}
+
+.category-row td {
+    color: #4ebd17;
+    font-weight: 600;
+    padding: 0.8rem;
+}
+
+/* Footer Document Styles */
+.doc-footer {
+    margin-top: 2rem;
+}
+
+.signature-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.signature-box {
+    border: 2px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.signature-box p {
+    margin-bottom: 0.5rem;
+    color: #555555;
+}
+
+.summary {
+    background: #e8f5e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid #4ebd17;
+    margin: 2rem 0;
+}
+
+.summary p {
+    margin-bottom: 0.5rem;
+    color: #333333;
+    font-size: 1rem;
+}
+
+/* Defects Section */
+.defects-section {
+    margin: 2rem 0;
+}
+
+.defects-section h3 {
+    color: #4ebd17;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.defects-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.defects-table th,
+.defects-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.defects-table thead {
+    background: #f5f5f5;
+    color: #333333;
+}
+
+/* Analysis Section */
+.analysis-section {
+    margin: 2rem 0;
+}
+
+.analysis-section h3 {
+    color: #4ebd17;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.analysis-table th,
+.analysis-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.analysis-table thead {
+    background: #f5f5f5;
+    color: #333333;
+}
+
+/* Approval Section */
+.approval-section {
+    margin: 2rem 0;
+}
+
+.approval-section h3 {
+    color: #4ebd17;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.approval-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.approval-box {
+    border: 2px solid #4ebd17;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: #f9fff9;
+}
+
+.approval-box p {
+    margin-bottom: 0.8rem;
+    color: #555555;
+}
+
+/* Matriz Trazabilidad Specific */
+.matriz-table {
+    font-size: 0.85rem;
+}
+
+.matriz-table th {
+    font-size: 0.85rem;
+    padding: 0.8rem 0.5rem;
+}
+
+.matriz-table td {
+    padding: 0.7rem 0.5rem;
+}
+
+/* Metrics Section */
+.metrics-section {
+    margin: 2rem 0;
+}
+
+.metrics-section h3 {
+    color: #4ebd17;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.metric-box {
+    background: white;
+    border: 2px solid #4ebd17;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.metric-label {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-value {
+    color: #4ebd17;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Coverage Section */
+.coverage-section {
+    margin: 2rem 0;
+}
+
+.coverage-section h3 {
+    color: #4ebd17;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.coverage-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.coverage-table th,
+.coverage-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.coverage-table thead {
+    background: #f5f5f5;
+    color: #333333;
+}
+
+.coverage-table tbody tr:hover {
+    background: #f0f8ec;
+}
+
+/* Print Styles */
+@media print {
+    .modal-close {
+        display: none;
+    }
+
+    .documento {
+        padding: 1rem;
+    }
+
+    .doc-table {
+        font-size: 0.75rem;
+    }
+
+    .doc-table th,
+    .doc-table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Responsive para documentos */
+@media (max-width: 768px) {
+    .documento {
+        padding: 1.5rem;
+    }
+
+    .doc-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .doc-table {
+        font-size: 0.75rem;
+    }
+
+    .doc-table th,
+    .doc-table td {
+        padding: 0.5rem;
+    }
+
+    .signature-section,
+    .approval-grid,
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        padding: 0;
+        max-height: 95vh;
+    }
+
+    .modal-overlay {
+        padding: 0.5rem;
+    }
+}
