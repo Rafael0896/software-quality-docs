@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from './documentos/Modal';
 import ListaChequeo from './documentos/ListaChequeo';
+import FormatoPruebas from './documentos/FormatoPruebas';
+
 
 
 const Instrumentos = () => {
@@ -17,7 +19,8 @@ const Instrumentos = () => {
         {
             nombre: "Formato de Pruebas Funcionales",
             descripcion: "Documento para registrar casos de prueba y resultados de ejecución",
-            items: ["ID del caso de prueba", "Precondiciones", "Pasos a ejecutar", "Resultado esperado", "Estado"]
+            items: ["ID del caso de prueba", "Precondiciones", "Pasos a ejecutar", "Resultado esperado", "Estado"],
+            component: FormatoPruebas
         },
         {
             nombre: "Ficha de Control de Cambios",
