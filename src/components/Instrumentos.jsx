@@ -3,6 +3,7 @@ import Modal from './documentos/Modal';
 import ListaChequeo from './documentos/ListaChequeo';
 import FormatoPruebas from './documentos/FormatoPruebas';
 import ControlCambios from './documentos/ControlCambios';
+import MatrizTrazabilidad from './documentos/MatrizTrazabilidad';
 
 
 const Instrumentos = () => {
@@ -31,7 +32,8 @@ const Instrumentos = () => {
         {
             nombre: "Matriz de Trazabilidad",
             descripcion: "Relaciona requisitos con casos de prueba y componentes",
-            items: ["ID Requisito", "Descripción", "Prioridad", "Casos de prueba asociados", "Estado"]
+            items: ["ID Requisito", "Descripción", "Prioridad", "Casos de prueba asociados", "Estado"],
+            component: MatrizTrazabilidad
         }
     ];
 
