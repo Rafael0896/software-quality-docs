@@ -79,7 +79,7 @@ const Instrumentos = () => {
                                 className="download-btn"
                                 onClick={() => openModal(index)}
                             >
-                                📥 Ver plantilla
+                                 Ver plantilla
                             </button>
                         </div>
                     ))}

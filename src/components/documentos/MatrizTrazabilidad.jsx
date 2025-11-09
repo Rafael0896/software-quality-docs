@@ -3,7 +3,7 @@ import React from 'react';
 const MatrizTrazabilidad = () => (
     <div className="documento">
         <div className="doc-header">
-            <h2>🔗 Matriz de Trazabilidad de Requisitos</h2>
+            <h2>Matriz de Trazabilidad de Requisitos</h2>
             <p className="doc-subtitle">Versión 1.0 | SENA - Análisis y Desarrollo de Software</p>
         </div>
 

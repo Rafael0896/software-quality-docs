@@ -3,7 +3,7 @@ import React from 'react';
 const FormatoPruebas = () => (
     <div className="documento">
         <div className="doc-header">
-            <h2>🧪 Formato de Pruebas Funcionales</h2>
+            <h2> Formato de Pruebas Funcionales</h2>
             <p className="doc-subtitle">Versión 1.0 | SENA - Análisis y Desarrollo de Software</p>
         </div>
 
