@@ -10,8 +10,10 @@ const Header = () => {
         <header className="header">
             <div className="header-content">
                 <div className="logo-section">
-                    <div className="logo">SENA</div>
-                    <h1>Diseño y diligenciamiento de instrumentos de calidad del software</h1>
+                    <div className="logo">
+                        <img src="public/logo.png"/>
+                    </div>
+                    <h1>Instrumentos de calidad del software</h1>
                 </div>
                 <nav className="nav">
                     <button onClick={() => scrollToSection('inicio')}>Inicio</button>
