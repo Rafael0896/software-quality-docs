@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from './documentos/Modal';
 import ListaChequeo from './documentos/ListaChequeo';
 import FormatoPruebas from './documentos/FormatoPruebas';
-
+import ControlCambios from './documentos/ControlCambios';
 
 
 const Instrumentos = () => {
@@ -25,7 +25,8 @@ const Instrumentos = () => {
         {
             nombre: "Ficha de Control de Cambios",
             descripcion: "Registro de modificaciones realizadas en el software",
-            items: ["Fecha del cambio", "Solicitante", "Descripción", "Impacto", "Estado de aprobación"]
+            items: ["Fecha del cambio", "Solicitante", "Descripción", "Impacto", "Estado de aprobación"],
+            component: ControlCambios
         },
         {
             nombre: "Matriz de Trazabilidad",
