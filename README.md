@@ -76,7 +76,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 1. **Clona el repositorio**
    ```bash
-   git clone https://github.com/<tu-usuario>/software-quality-docs.git
+   https://github.com/Rafael0896/software-quality-docs
    ```
 
 2. **Accede al directorio del proyecto**
