@@ -11,7 +11,7 @@ const Header = () => {
             <div className="header-content">
                 <div className="logo-section">
                     <div className="logo">
-                        <img src="public/logo.png"/>
+                        <img src="https://i.postimg.cc/RZn5V8Jg/logo.png"/>
                     </div>
                     <h1>Instrumentos de calidad del software</h1>
                 </div>
